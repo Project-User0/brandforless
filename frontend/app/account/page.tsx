@@ -167,7 +167,7 @@ export default function AccountPage() {
             Member Area
           </span>
           <h1 className="text-3xl sm:text-4xl font-light tracking-tight font-serif">
-            Welcome, {user.name.split(" ")[0]}
+            Welcome, {user.name?.split(" ")[0]}
           </h1>
         </div>
 
@@ -181,7 +181,7 @@ export default function AccountPage() {
           >
             <div className="flex items-center gap-4 pb-6 border-b border-border/60">
               <div className="w-12 h-12 bg-foreground text-background rounded-none flex items-center justify-center text-base font-medium tracking-wider select-none">
-                {user.name.charAt(0).toUpperCase()}
+                {user.name?.charAt(0).toUpperCase()}
               </div>
               <div className="min-w-0">
                 <h3 className="text-sm font-medium tracking-wide truncate">

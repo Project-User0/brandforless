@@ -1,7 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { Menu, Search, Bell, ShieldCheck, ExternalLink, User2 } from "lucide-react";
+import {
+  Menu,
+  Search,
+  Bell,
+  ShieldCheck,
+  ExternalLink,
+  User2,
+  LogOutIcon,
+  Power,
+} from "lucide-react";
 
 interface AdminHeaderProps {
   onMenuTrigger: () => void;
@@ -10,7 +19,6 @@ interface AdminHeaderProps {
 export default function AdminHeader({ onMenuTrigger }: AdminHeaderProps) {
   return (
     <header className="fixed top-0 left-0 right-0 h-[64px] bg-background/80 backdrop-blur-md border-b border-border/40 z-40 flex items-center justify-between px-4 sm:px-8 select-none">
-      
       {/* Brand Workspace Identity */}
       <div className="flex items-center gap-4">
         <button
@@ -20,22 +28,25 @@ export default function AdminHeader({ onMenuTrigger }: AdminHeaderProps) {
         >
           <Menu className="w-5 h-5" />
         </button>
-        
-        <Link href="/admin/dashboard" className="flex items-center gap-2.5 group">
+
+        <Link href="/admin" className="flex items-center gap-2.5 group">
           <span className="font-serif tracking-widest text-sm uppercase font-light">
-            Brand for Less <span className="font-sans text-[10px] tracking-normal px-1.5 py-0.5 bg-foreground text-background font-medium ml-1">Admin</span>
+            Brand for Less{" "}
+            <span className="font-sans text-[10px] tracking-normal px-1.5 py-0.5 bg-foreground text-background font-medium ml-1">
+              Admin
+            </span>
           </span>
         </Link>
       </div>
 
       {/* Utility Action Module Clusters */}
       <div className="flex items-center gap-4 sm:gap-6">
-        <Link 
-          href="/" 
+        <Link
+          href="/"
           target="_blank"
           className="hidden sm:flex items-center gap-1.5 text-[10px] uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors font-medium"
         >
-          View Store <ExternalLink className="w-3 h-3" />
+          <ExternalLink className="w-4 h-4" />
         </Link>
 
         <button className="relative text-muted-foreground hover:text-foreground transition-colors p-1">
@@ -48,8 +59,17 @@ export default function AdminHeader({ onMenuTrigger }: AdminHeaderProps) {
             <User2 className="w-4 h-4 text-muted-foreground" />
           </div>
         </Link>
-      </div>
 
+        <button
+          onClick={() => {
+            localStorage.removeItem("user");
+            window.location.href = "/auth/login";
+          }}
+          className="relative text-muted-foreground hover:text-red-500 transition-colors p-1 cursor-pointer"
+        >
+          <Power className="w-4 h-4 stroke-[1.5] text-red-400" />
+        </button>
+      </div>
     </header>
   );
 }
