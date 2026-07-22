@@ -17,6 +17,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const navigation = [
   { name: "Shop", href: "/shop" },
@@ -87,9 +88,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="h-8 w-8 rounded-lg bg-gray-300 ">
-              <span className="flex h-full w-full items-center justify-center font-bold text-foreground">
-                B
-              </span>
+              <Image src="/logo.jpg" height={20} width={20} alt="Brand for Less" className="flex h-full w-full items-center justify-center font-bold text-foreground" />
             </div>
             <span className="hidden font-serif text-lg font-bold text-foreground sm:inline">
               Brand for Less
