@@ -111,15 +111,6 @@ export function Header() {
 
           {/* Actions */}
           <div className="flex items-center gap-4">
-            {/* Search */}
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setSearchOpen(!isSearchOpen)}
-              className="text-foreground/70 hover:text-foreground"
-            >
-              <Search size={20} />
-            </Button>
 
             {/* Wishlist */}
             <Link href="/wishlist">
@@ -178,21 +169,6 @@ export function Header() {
             </Button>
           </div>
         </div>
-
-        {/* Search Bar */}
-        {isSearchOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            className="pb-4"
-          >
-            <Input
-              placeholder="Search products..."
-              className="w-full border border-gray-300 rounded-md"
-            />
-          </motion.div>
-        )}
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (

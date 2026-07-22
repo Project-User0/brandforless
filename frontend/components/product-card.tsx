@@ -82,7 +82,7 @@ export function ProductCard({ product }: ProductCardProps) {
                 <Badge variant="secondary">Best Seller</Badge>
               )}
               {discountPercent > 0 && (
-                <Badge variant="destructive">-{discountPercent}%</Badge>
+                <Badge variant="destructive" className="text-white">-{discountPercent}%</Badge>
               )}
             </div>
 

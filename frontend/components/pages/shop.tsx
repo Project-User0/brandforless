@@ -1,14 +1,15 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Search, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Select } from "@/components/ui/select";
 import { ProductCard } from "@/components/product-card";
 import { products } from "@/data/products";
 import { categories } from "@/data/categories";
 import { useFilters } from "@/store";
+import { useRouter, useSearchParams } from "next/navigation";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -31,7 +32,12 @@ const itemVariants = {
 };
 
 export function ShopPage() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const categorySlugParam = searchParams.get("category");
   const [showFilters, setShowFilters] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+
   const {
     selectedCategories,
     priceRange,
@@ -41,11 +47,39 @@ export function ShopPage() {
     setPriceRange,
   } = useFilters();
 
+  useEffect(() => {
+    if (categorySlugParam) {
+      const matchedCategory = categories.find(
+        (c) => c.slug === categorySlugParam || c.id === categorySlugParam,
+      );
+
+      if (matchedCategory) {
+        setSelectedCategories([matchedCategory.id]);
+      }
+    }
+  }, [categorySlugParam, setSelectedCategories]);
+
   const filteredProducts = useMemo(() => {
     let result = products;
 
+    if (searchQuery.trim() !== "") {
+      const query = searchQuery.toLowerCase().trim();
+      result = result.filter(
+        (p) =>
+          p.title?.toLowerCase().includes(query) ||
+          p.description?.toLowerCase().includes(query),
+      );
+    }
+
     if (selectedCategories.length > 0) {
-      result = result.filter((p) => selectedCategories.includes(p.category));
+      result = result.filter((p) => {
+        return selectedCategories.some((catId) => {
+          const matchedCategoryObj = categories.find((c) => c.id === catId);
+          return (
+            p.category === catId || p.category === matchedCategoryObj?.slug
+          );
+        });
+      });
     }
 
     result = result.filter((p) => {
@@ -75,14 +109,28 @@ export function ShopPage() {
     }
 
     return result;
-  }, [selectedCategories, priceRange, sortBy]);
+  }, [searchQuery, selectedCategories, priceRange, sortBy]);
 
   const handleCategoryToggle = (categoryId: string) => {
+    if (categorySlugParam) {
+      router.push("/shop", { scroll: false });
+    }
+
     setSelectedCategories(
       selectedCategories.includes(categoryId)
         ? selectedCategories.filter((c) => c !== categoryId)
         : [...selectedCategories, categoryId],
     );
+  };
+
+  const handleResetFilters = () => {
+    if (categorySlugParam) {
+      router.push("/shop", { scroll: false });
+    }
+    setSearchQuery("");
+    setSelectedCategories([]);
+    setPriceRange([0, 500]);
+    setSortBy("featured");
   };
 
   return (
@@ -149,7 +197,7 @@ export function ShopPage() {
                   <input
                     type="range"
                     min="0"
-                    max="500"
+                    max="10000"
                     value={priceRange[0]}
                     onChange={(e) =>
                       setPriceRange([Number(e.target.value), priceRange[1]])
@@ -159,7 +207,7 @@ export function ShopPage() {
                   <input
                     type="range"
                     min="0"
-                    max="500"
+                    max="10000"
                     value={priceRange[1]}
                     onChange={(e) =>
                       setPriceRange([priceRange[0], Number(e.target.value)])
@@ -172,11 +220,7 @@ export function ShopPage() {
 
             {/* Reset Filters */}
             <Button
-              onClick={() => {
-                setSelectedCategories([]);
-                setPriceRange([0, 500]);
-                setSortBy("featured");
-              }}
+              onClick={handleResetFilters}
               className="w-full bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors"
             >
               Reset Filters
@@ -189,10 +233,38 @@ export function ShopPage() {
           {/* Toolbar */}
           <div className="border-b border-border px-6 py-4">
             <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
-              <p className="text-sm text-muted-foreground">
-                Showing {filteredProducts.length} products
-              </p>
-              <div className="flex gap-4 items-center">
+              {/* Search Bar + Showing Products Area */}
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4 w-full md:w-auto">
+                {/* Search Input */}
+                <div className="relative w-full sm:w-100">
+                  <Search
+                    className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground"
+                    size={16}
+                  />
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    placeholder="Search products..."
+                    className="w-full rounded-md border border-gray-200 bg-background pl-9 pr-8 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-ring"
+                  />
+                  {searchQuery && (
+                    <button
+                      onClick={() => setSearchQuery("")}
+                      className="absolute right-2.5 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
+                    >
+                      <X size={14} />
+                    </button>
+                  )}
+                </div>
+
+                <p className="text-sm text-muted-foreground shrink-0">
+                  Showing {filteredProducts.length} products
+                </p>
+              </div>
+
+              {/* Filters toggle + Sorting Select */}
+              <div className="flex gap-4 items-center w-full md:w-auto justify-between md:justify-end">
                 <Button
                   variant="ghost"
                   onClick={() => setShowFilters(!showFilters)}
@@ -238,7 +310,7 @@ export function ShopPage() {
                     No products found
                   </p>
                   <p className="mt-2 text-muted-foreground">
-                    Try adjusting your filters or search criteria
+                    Try adjusting your search query or filters
                   </p>
                 </div>
               </div>

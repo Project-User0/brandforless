@@ -24,7 +24,7 @@ export const collections: Collection[] = [
     name: "Summer Collection",
     slug: "summer-collection",
     image:
-      "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&q=80",
+      "https://static.standard.co.uk/2024/05/16/10/36/Summer_mens_fashion.jpg.jpg?trim=0,0,0,0&quality=100&auto=webp&width=1920",
     description:
       "Light, fluid, and breathable pieces crafted intentionally for warm weather escapes.",
     productIds: ["1", "11"],
@@ -36,7 +36,7 @@ export const collections: Collection[] = [
     name: "Everyday Essentials",
     slug: "everyday-essentials",
     image:
-      "https://images.unsplash.com/photo-1506629082632-da8b43dab3ce?w=800&q=80",
+      "https://i.pinimg.com/474x/41/f5/e3/41f5e3ce92ed437700ceba05ce17f9a5.jpg",
     description:
       "Timeless structural staples engineered to flow effortlessly through daily rotations.",
     productIds: ["2", "3", "4", "12"],
@@ -48,7 +48,7 @@ export const collections: Collection[] = [
     name: "Premium Collection",
     slug: "premium-collection",
     image:
-      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&q=80",
+      "https://thevou.com/wp-content/uploads/2024/09/Old-Money-Mens-Clothing-Brands-696x1044.jpg",
     description:
       "Our finest luxury capsule, utilizing bespoke textiles and artisanal craftsmanship.",
     productIds: ["5", "6", "8", "13", "15", "19"],
@@ -60,7 +60,7 @@ export const collections: Collection[] = [
     name: "Winter Warmth",
     slug: "winter-warmth",
     image:
-      "https://images.unsplash.com/photo-1538614446150-e375e08b1ae7?w=800&q=80",
+      "https://cdn.firstcry.com/education/2022/11/14125845/Winter-Clothes-Vocabulary-in-English.jpg",
     description:
       "Cozy profiles and heavyweight layering shields designed for freezing temperatures.",
     productIds: ["8", "15"],
@@ -72,7 +72,7 @@ export const collections: Collection[] = [
     name: "Casual Chic",
     slug: "casual-chic",
     image:
-      "https://images.unsplash.com/photo-1542272604-787c62d465d1?w=800&q=80",
+      "https://cdn.mos.cms.futurecdn.net/in9LepMURKAmFxbb2QkqG9.jpg",
     description:
       "Relaxed modern aesthetics providing unparalleled ease without sacrificing posture.",
     productIds: ["3", "4", "14"],
@@ -96,7 +96,7 @@ export const collections: Collection[] = [
     name: "Essentials",
     slug: "essentials",
     image:
-      "https://images.unsplash.com/photo-1596062176415-6a70e4dc9a97?w=800&q=80",
+      "https://cdn.shopify.com/s/files/1/0611/4443/2883/files/signature-style-wardrobe-inspiration-lifestyle_600x600.jpg?v=1777326852",
     description:
       "Non-negotiable signature additions built to establish structural consistency.",
     productIds: ["7", "10", "18"],
