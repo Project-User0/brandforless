@@ -48,7 +48,7 @@ export function CartPage() {
 
                 return (
                   <motion.div
-                    key={item.productId}
+                    key={item.id}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: idx * 0.1 }}
@@ -83,14 +83,14 @@ export function CartPage() {
                     <div className="flex flex-col items-end gap-4">
                       <div className="flex items-center gap-2">
                         <button
-                          onClick={() => updateQuantity(item.productId, Math.max(1, item.quantity - 1))}
+                          onClick={() => updateQuantity(item.id, Math.max(1, item.quantity - 1))}
                           className="rounded-sm border border-border px-2 py-1 hover:bg-muted"
                         >
                           −
                         </button>
                         <span className="w-6 text-center text-sm">{item.quantity}</span>
                         <button
-                          onClick={() => updateQuantity(item.productId, item.quantity + 1)}
+                          onClick={() => updateQuantity(item.id, item.quantity + 1)}
                           className="rounded-sm border border-border px-2 py-1 hover:bg-muted"
                         >
                           +
@@ -99,7 +99,7 @@ export function CartPage() {
                       <div className="space-y-2">
                         <p className="text-sm font-semibold text-foreground">Rs.{itemTotal}</p>
                         <button
-                          onClick={() => removeItem(item.productId)}
+                          onClick={() => removeItem(item.id)}
                           className="text-destructive hover:text-destructive/80"
                         >
                           <Trash2 size={16} />

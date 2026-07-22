@@ -16,9 +16,9 @@ export const products: Product[] = [
     rating: 4.8,
     reviewCount: 124,
     images: [
-      'https://images.unsplash.com/photo-1596062176415-6a70e4dc9a97?w=800&q=80',
-      'https://images.unsplash.com/photo-1598839212662-0f7f4b1a0e2e?w=800&q=80',
-      'https://images.unsplash.com/photo-1590361391885-30bbb7b42f28?w=800&q=80',
+      'https://auraalooks.com/cdn/shop/files/IMG_3943.png?v=1783595040',
+      'https://lexington.centracdn.net/client/dynamic/images/19315_dfff0c045b-22511204_200_1.jpg',
+      'https://auraalooks.com/cdn/shop/files/IMG_3945.png?v=1783595829&width=1920',
     ],
     sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
     colors: [
@@ -49,9 +49,9 @@ export const products: Product[] = [
     rating: 4.7,
     reviewCount: 98,
     images: [
-      'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=800&q=80',
-      'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&q=80',
-      'https://images.unsplash.com/photo-1546749283-87f3477c8e93?w=800&q=80',
+      'https://content.moss.co.uk/images/extraextralarge/966816309_01.jpg',
+      'https://camixa.com.au/cdn/shop/products/OXFORD_White-Casual-Cotton-shirt-OXCWHT5.jpg?v=1677557670&width=1080',
+      'https://cdn2.propercloth.com/pic_cs/f74cd5da7afcdff171a02c5cfed5ea7b_size6.jpg',
     ],
     sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
     colors: [
@@ -83,9 +83,9 @@ export const products: Product[] = [
     rating: 4.9,
     reviewCount: 267,
     images: [
-      'https://images.unsplash.com/photo-1542272604-787c62d465d1?w=800&q=80',
-      'https://images.unsplash.com/photo-1542272607-a3fc3f36fbb9?w=800&q=80',
-      'https://images.unsplash.com/photo-1542272529-d4da4e5fcd9f?w=800&q=80',
+      'https://www.perryellis.com/cdn/shop/files/Perry-Ellis-mens-Slim-Dark-Indigo-Eco-Denim.jpg?v=1782847338&width=1080',
+      'https://www.buffalojeans.ca/cdn/shop/files/BM22784-419_1000x.jpg?v=1694028061',
+      'https://static-01.daraz.com.np/p/4c11b1234ee91992dc9374fed1cdd11c.jpg',
     ],
     sizes: ['28', '30', '32', '34', '36', '38'],
     colors: [
@@ -117,8 +117,9 @@ export const products: Product[] = [
     reviewCount: 312,
     images: [
       'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80',
-      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80',
-      'https://images.unsplash.com/photo-1618002395438-d2c793ecc406?w=800&q=80',
+      'https://www.trueclassictees.com/cdn/shop/files/TCT_4000_Short-Sleeve-Classic-Crew_BLACK_Large_Ecomm_2025_JUN_2.jpg?v=1762269520&width=1420',
+      'https://www.rails.com/cdn/shop/files/CLASSIC-CREW-HEATHER-GREY-1A_d26ee04e-9123-41c2-b528-1e52fd56ea68.jpg?v=1752088429&width=1690',
+      'https://hylete.com/cdn/shop/files/NV_Minimalist_OnModel.png?v=1773096785',
     ],
     sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
     colors: [
@@ -151,9 +152,9 @@ export const products: Product[] = [
     rating: 4.9,
     reviewCount: 54,
     images: [
-      'https://images.unsplash.com/photo-1505025114519-a9ea1a43d948?w=800&q=80',
-      'https://images.unsplash.com/photo-1594073898966-b0b9da20e4e9?w=800&q=80',
-      'https://images.unsplash.com/photo-1594032724606-bc4102cb0898?w=800&q=80',
+      'https://www.2tall.com/cdn/shop/files/Blazer_20Skopes_20Fox_20Charcoal_20front_2003_20crop.jpg?v=1764638246&width=600',
+      'https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-1339458_alternate10?$rl_4x5_pdp$',
+      'https://cdn.endource.com/image/8872b56b42a091b3e45f8dea8a0aea1f/detail/reiss-purdue-wool-blend-slim-fit-blazer.jpg?class=800&optimizer=image',
     ],
     sizes: ['XS', 'S', 'M', 'L', 'XL'],
     colors: [
@@ -184,9 +185,9 @@ export const products: Product[] = [
     rating: 4.8,
     reviewCount: 67,
     images: [
-      'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&q=80',
-      'https://images.unsplash.com/photo-1595815817707-c28599ea60ca?w=800&q=80',
-      'https://images.unsplash.com/photo-1606379128607-30b12a8010d1?w=800&q=80',
+      'https://image.josbank.com/is/image/JosBank/23H1_06_HAGGAR_CHARCOAL_MAIN?$pgp_desktop_thumbnail_lg$',
+      'https://peterjacksons.com/cdn/shop/files/men-pants-black-wool-SSRT21-11.webp?v=1766536063&width=1100',
+      'https://i.etsystatic.com/57687315/r/il/7ca148/7118187741/il_570xN.7118187741_7iuk.jpg',
     ],
     sizes: ['28', '30', '32', '34', '36', '38', '40'],
     colors: [
@@ -217,9 +218,9 @@ export const products: Product[] = [
     rating: 4.7,
     reviewCount: 156,
     images: [
-      'https://images.unsplash.com/photo-1596062176415-6a70e4dc9a97?w=800&q=80',
-      'https://images.unsplash.com/photo-1565958011504-98d636d506ca?w=800&q=80',
-      'https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?w=800&q=80',
+      'https://m.media-amazon.com/images/I/61q6zlqhb5L._AC_UY1100_.jpg',
+      'https://i.insider.com/64cd07f70f3dff00195755a4?width=800&format=jpeg&auto=webp',
+      'https://blugiallo.com/wp-content/uploads/2023/03/BLUGIALLO_WHITE_OXFORD_TWILL_WHITE_SH00119_1069-copy-1-scaled.jpg',
     ],
     sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
     colors: [{ name: 'White', hex: '#FFFFFF' }],
@@ -247,9 +248,9 @@ export const products: Product[] = [
     rating: 4.9,
     reviewCount: 42,
     images: [
-      'https://images.unsplash.com/photo-1539533057440-7274bbb9b838?w=800&q=80',
-      'https://images.unsplash.com/photo-1594938299603-c8148c4dae35?w=800&q=80',
-      'https://images.unsplash.com/photo-1567450489212-d37b5ba2b51e?w=800&q=80',
+      'https://ashanderie.com/cdn/shop/files/top-coat-charcoal-wool-top-coat-47266158805290.jpg?v=1762459621',
+      'https://www.charlestyrwhitt.com/dw/image/v2/AAWJ_PRD/on/demandware.static/-/Sites-ctshirts-master/default/dw526caf6c/OUF/OUF0068NAV/OUF0068NAV_MODEL_FRONT_01.jpg?sw=960&sh=1200',
+      'https://content.moss.co.uk/images/original/967017870_02.jpg',
     ],
     sizes: ['XS', 'S', 'M', 'L', 'XL'],
     colors: [
@@ -281,14 +282,16 @@ export const products: Product[] = [
     rating: 4.8,
     reviewCount: 89,
     images: [
-      'https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=800&q=80',
-      'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80',
-      'https://images.unsplash.com/photo-1551624467-8d714d3b0fbe?w=800&q=80',
+      'https://www.cocksstore.com/cdn/shop/products/faux-leather-bomber-jacket-black-front-2-6394b78c33a53.jpg?v=1670690717&width=1946',
+      'https://cdn.platform.next/common/items/default/default/itemimages/3_4Ratio/product/lge/H15202s.jpg?im=Resize,width=750',
+      'https://www.danezon.com/wp-content/uploads/2020/08/Mens-Grey-Leather-Bomber-Jacket.jpg',
     ],
     sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
     colors: [
       { name: 'Black', hex: '#000000' },
       { name: 'Brown', hex: '#8B4513' },
+      { name: 'Gray', hex: '#94918f' },
+
     ],
     material: 'Genuine Leather',
     care: 'Wipe clean with soft cloth, condition regularly',
@@ -314,9 +317,9 @@ export const products: Product[] = [
     rating: 4.7,
     reviewCount: 203,
     images: [
-      'https://images.unsplash.com/photo-1624526267942-ab0ff8a3e052?w=800&q=80',
-      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80',
-      'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80',
+      'https://www.tannergoods.com/cdn/shop/products/TG-Classic-Belt-Black-Stainless-Thumb-edit.jpg?v=1648151008',
+      'https://www.tannergoods.com/cdn/shop/products/TG-Classic-Belt-Cognac-Stainless-Thumb.jpg?v=1648151092',
+      'https://leatherbeltsonline.com/wp-content/uploads/2024/08/classic-mens-tan-belt-real-leather-1-10-02092024-AML.jpg',
     ],
     sizes: ['28', '30', '32', '34', '36', '38', '40'],
     colors: [
@@ -348,9 +351,9 @@ export const products: Product[] = [
     rating: 4.8,
     reviewCount: 145,
     images: [
-      'https://images.unsplash.com/photo-1572804419867-c5d5f3a2ead1?w=800&q=80',
-      'https://images.unsplash.com/photo-1572804419867-c5d5f3a2ead1?w=800&q=80',
-      'https://images.unsplash.com/photo-1583573534436-1eda76ecc5d8?w=800&q=80',
+      'https://media.tractorsupply.com/is/image/TractorSupplyCompany/6101076?wid=554&hei=554&qlt=90&fmt=jpeg&resMode=sharp2&op_usm=0.9,1.0,8,0',
+      'https://www.stfrock.com.au/cdn/shop/files/250814_StFrock_Maddie_AM_30250174-WHT_0844.jpg?v=1755224938',
+      'https://media.very.ie/i/littlewoodsireland/WUQPA_SQ1_0000000020_BLUE_MDf?$pdp_300x400_x2$&fmt=jpg',
     ],
     sizes: ['XS', 'S', 'M', 'L', 'XL'],
     colors: [
@@ -381,9 +384,9 @@ export const products: Product[] = [
     rating: 4.7,
     reviewCount: 98,
     images: [
-      'https://images.unsplash.com/photo-1534215754734-18e50fcbb371?w=800&q=80',
-      'https://images.unsplash.com/photo-1539533057440-7274bbb9b838?w=800&q=80',
-      'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&q=80',
+      'https://thefrankieshop.com/cdn/shop/products/stevie-oversized-blazer-black-blazer-the-frankie-shop-837955.jpg?v=1661526544',
+      'https://media2.newlookassets.com/i/newlook/874210917/womens/clothing/coats-jackets/petite-camel-oversized-blazer.jpg?strip=true&qlt=50&w=640',
+      'https://www.centofashion.com/images/thumbs/0043371_-oversized-_780.jpeg',
     ],
     sizes: ['XS', 'S', 'M', 'L', 'XL'],
     colors: [
@@ -415,9 +418,9 @@ export const products: Product[] = [
     rating: 4.9,
     reviewCount: 112,
     images: [
-      'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80',
-      'https://images.unsplash.com/photo-1595777707802-c2b2e5f1a5a8?w=800&q=80',
-      'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=800&q=80',
+      'https://www.samuel-windsor.co.uk/cdn/shop/products/BV03_FEATURE_LR.jpg?v=1675938351&width=1000',
+      'https://rosagilberto.com/cdn/shop/files/Afwan26_f6286444-f019-46de-8c19-9e74c7dbf3e3.jpg?v=1708568442&width=2048',
+      'https://static-01.daraz.com.np/p/a938f4cdb2a7ec31c1ec5aa62eb2023a.jpg',
     ],
     sizes: ['6', '7', '8', '9', '10', '11', '12', '13'],
     colors: [
@@ -447,9 +450,9 @@ export const products: Product[] = [
     rating: 4.8,
     reviewCount: 267,
     images: [
-      'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80',
-      'https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=800&q=80',
-      'https://images.unsplash.com/photo-1599599810694-b5ac4dd64b15?w=800&q=80',
+      'https://www.dnkmobile.com/cdn/shop/products/bonafini-shoe-men-s-white-casual-sneaker-37203043713254.jpg?v=1661702232',
+      'https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/02/6244723/1.jpg?3562',
+      'https://www.dnkmobile.com/cdn/shop/products/bonafini-shoe-men-s-black-casual-sneaker-37202922897638.jpg?v=1661703075',
     ],
     sizes: ['6', '7', '8', '9', '10', '11', '12', '13'],
     colors: [
@@ -481,9 +484,9 @@ export const products: Product[] = [
     rating: 4.7,
     reviewCount: 87,
     images: [
-      'https://images.unsplash.com/photo-1566631321683-e9932d85bcfc?w=800&q=80',
-      'https://images.unsplash.com/photo-1566631321683-e9932d85bcfc?w=800&q=80',
-      'https://images.unsplash.com/photo-1551597221-acff2dcb855b?w=800&q=80',
+      'https://www.thejewellerystop.com/cdn/shop/files/LS-00087-1.jpg?v=1765222978&width=600',
+      'https://satila.com/pub_images/original/S67005-133-00_10.jpg',
+      'https://img.hatshopping.co.uk/tf/629/5/Recycled-Wool-Mix-Doubleface-Scarf-by-Fraas.57425_f47.jpg',
     ],
     sizes: ['One Size'],
     colors: [
@@ -514,9 +517,9 @@ export const products: Product[] = [
     rating: 4.6,
     reviewCount: 156,
     images: [
-      'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&q=80',
-      'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&q=80',
-      'https://images.unsplash.com/photo-1524763612807-4e109f2a4c05?w=800&q=80',
+      'https://ecobags.co.nz/cdn/shop/files/ECV-18OF-Gusseted-Tote-Bag-Natural-Canvas-04.jpg?v=1764557168',
+      'https://tbfbags.com/cdn/shop/files/tg200-black-everyday-canvas-tote-thumbnail_560x.jpg?v=1712170460',
+      'https://cdn.shopify.com/s/files/1/0606/8109/3269/files/cf1ab91a-a655-4916-89d2-ef29838ef431.webp?v=1775079971',
     ],
     sizes: ['One Size'],
     colors: [
@@ -547,9 +550,9 @@ export const products: Product[] = [
     rating: 4.8,
     reviewCount: 64,
     images: [
-      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80',
-      'https://images.unsplash.com/photo-1564611967816-da4e0dd0be60?w=800&q=80',
-      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80',
+      'https://www.gentlemansguru.com/wp-content/uploads/2019/06/Silk-NAvy-Blue-Pocket-Square-Hankerchief-from-Gentlemansguru.com_.jpg',
+      'https://www.cyberoptix.com/cdn/shop/products/charcoal-solid-color-pocket-square-vegan-cyberoptix-01-web.jpg?v=1571438889',
+      'https://www.gentlemansguru.com/wp-content/uploads/2019/06/Mens-Burgundy-Silk-Pocket-Square-Hankerchief-from-Gentlemansguru.com_.jpg',
     ],
     sizes: ['One Size'],
     colors: [
@@ -580,9 +583,9 @@ export const products: Product[] = [
     rating: 4.7,
     reviewCount: 92,
     images: [
-      'https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=800&q=80',
-      'https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=800&q=80',
-      'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80',
+      'https://static-01.daraz.com.np/p/e5f29534f790987511eede5fcb8380ea.jpg',
+      'https://img.drz.lazcdn.com/static/np/p/640dcf695fbc87d5a68e7470f4cc63c9.jpg_720x720q80.jpg',
+      'https://www.watchstrapstyle.co.uk/cdn/shop/files/tan-unstitched-smooth-leather-watch-strap-flat-01.jpg?v=1709209537&width=1000',
     ],
     sizes: ['20mm', '22mm'],
     colors: [
@@ -614,9 +617,9 @@ export const products: Product[] = [
     rating: 4.9,
     reviewCount: 73,
     images: [
-      'https://images.unsplash.com/photo-1620799140408-edc7d3f3d716?w=800&q=80',
-      'https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=800&q=80',
-      'https://images.unsplash.com/photo-1620799140408-edc7d3f3d716?w=800&q=80',
+      'https://cdn2.propercloth.com/pic_sp/633e039f153390a9846666a47a586eb0_size6.jpg',
+      'https://www.filippodelaurentiis.it/cdn/shop/files/scollo-v-lana-seta-cashmere-blu-navy_d1664589-4c44-4852-8714-e06b37afbdb6.jpg?v=1756811243',
+      'https://media.maisoncashmere.com/a48304ef-7d4e-4a4c-9823-719ec3f82e09/maisoncashmere.com/cdn/shop/files/mens-classic-cashmere-crew-neck-sweater-MCM001-20-0075-1-5237.webp?v=1754316725&width=832',
     ],
     sizes: ['XS', 'S', 'M', 'L', 'XL'],
     colors: [
@@ -647,9 +650,9 @@ export const products: Product[] = [
     rating: 4.7,
     reviewCount: 108,
     images: [
-      'https://images.unsplash.com/photo-1542272604-787c62d465d1?w=800&q=80',
-      'https://images.unsplash.com/photo-1506629082632-da8b43dab3ce?w=800&q=80',
-      'https://images.unsplash.com/photo-1542272604-787c62d465d1?w=800&q=80',
+      'https://ebonyboutique.co.nz/cdn/shop/files/ebony-womens-100-merino-wool-210-jogger-pants-charcoal-978762.jpg?v=1749890730&width=1200',
+      'https://www.woolino.com/cdn/shop/files/Women_sJogger_merinowool_BlueGraphite_flatlay_1080x.jpg?v=1717134474',
+      'https://woolandprince.com/cdn/shop/files/20251021_WP_01773_InterlockJogger_Olive-LR.jpg?v=1766169049&width=2670',
     ],
     sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
     colors: [

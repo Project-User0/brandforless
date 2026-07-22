@@ -25,10 +25,11 @@ export interface Product {
 }
 
 export interface CartItem {
-  productId: string
+  id: string;
+  productId: string | number
   quantity: number
-  selectedSize: string
-  selectedColor: string
+  selectedSize?: string | null
+  selectedColor?: string | null
 }
 
 export interface WishlistItem {

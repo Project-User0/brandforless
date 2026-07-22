@@ -153,7 +153,7 @@ export function Header() {
               </Button>
             </Link>
 
-            {/* Cart */}
+            {/* User */}
             <Link href="/account">
               <Button
                 variant="ghost"

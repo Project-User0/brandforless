@@ -30,14 +30,14 @@ export function ProductDetailPage({ product }: ProductDetailPageProps) {
     ? Math.round(((product.price - product.discountPrice) / product.price) * 100)
     : 0
 
-  const handleAddToCart = () => {
-    addItem({
-      productId: product.id,
-      quantity,
-      selectedSize,
-      selectedColor: selectedColor.name,
-    })
-  }
+const handleAddToCart = () => {
+  addItem({
+    productId: product.id,
+    quantity,
+    selectedSize: selectedSize || null,
+    selectedColor: selectedColor?.name || null,
+  })
+}
 
   const handleWishlist = () => {
     if (inWishlist) {
@@ -85,7 +85,7 @@ export function ProductDetailPage({ product }: ProductDetailPageProps) {
                   <button
                     key={idx}
                     onClick={() => setSelectedImage(idx)}
-                    className={`relative aspect-square w-20 flex-shrink-0 snap-start overflow-hidden rounded-sm border-2 transition-all ${
+                    className={`relative aspect-square w-20 flex-shrink-0 snap-start overflow-hidden rounded-sm border-1 transition-all ${
                       selectedImage === idx ? 'border-primary' : 'border-transparent'
                     }`}
                   >
@@ -164,7 +164,7 @@ export function ProductDetailPage({ product }: ProductDetailPageProps) {
                       <button
                         key={color.name}
                         onClick={() => setSelectedColor(color)}
-                        className={`flex items-center gap-2 rounded-sm border-2 px-3 py-1.5 sm:px-4 sm:py-2 transition-all ${
+                        className={`flex items-center gap-2 rounded-sm border-1 px-3 py-1.5 sm:px-4 sm:py-2 transition-all ${
                           selectedColor.name === color.name
                             ? 'border-primary'
                             : 'border-border hover:border-muted-foreground'
@@ -186,7 +186,7 @@ export function ProductDetailPage({ product }: ProductDetailPageProps) {
                   <Select
                     value={selectedSize}
                     onChange={(e) => setSelectedSize(e.target.value)}
-                    className="mt-3 w-full h-8 border border-gray-200"
+                    className="mt-3 w-full h-9 border border-gray-200"
                   >
                     {product.sizes.map((size) => (
                       <option key={size} value={size}>
@@ -224,11 +224,11 @@ export function ProductDetailPage({ product }: ProductDetailPageProps) {
                 </Button>
                 <Button
                   onClick={handleWishlist}
-                  variant={inWishlist ? 'default' : 'outline'}
+                  variant='outline'
                   size="lg"
                   className="w-full sm:flex-1 gap-2"
                 >
-                  <Heart size={20} className={inWishlist ? 'fill-current' : ''} />
+                  <Heart size={20} className={inWishlist ? 'fill-black' : ''} />
                   {inWishlist ? 'Saved' : 'Save'}
                 </Button>
               </div>
